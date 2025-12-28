@@ -1,0 +1,30 @@
+# Security - CRITICAL
+credentials.json
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# Vercel
+.vercel
+
+# IDE Settings (Optional but recommended)
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

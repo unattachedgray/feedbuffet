@@ -1,0 +1,14 @@
+SYS.PATH: ['', 'D:\\dev\\feedbuffet\\services\\kitchen', 'C:\\Python313\\python313.zip', 'C:\\Python313\\DLLs', 'C:\\Python313\\Lib', 'C:\\Python313', 'D:\\dev\\feedbuffet\\services\\kitchen\\.venv', 'D:\\dev\\feedbuffet\\services\\kitchen\\.venv\\Lib\\site-packages', 'D:\\dev\\feedbuffet\\services\\kitchen']
+CWD: D:\dev\feedbuffet\services\kitchen
+LS SRC: ['ai', 'db', 'ingest', '__init__.py', '__pycache__']
+LS SRC/DB: ['engine.py', 'models.py', '__init__.py', '__pycache__']
+Imported news_client
+Imported src.db: <module 'src.db' from 'D:\\dev\\feedbuffet\\services\\kitchen\\src\\db\\__init__.py'>
+Imported src.db.engine: <module 'src.db.engine' from 'D:\\dev\\feedbuffet\\services\\kitchen\\src\\db\\engine.py'>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys; sys.stdout=open('debug_log.txt','w'); sys.stderr=sys.stdout; import run_kitchen; run_kitchen.main()
+                                                                             ^^^^^^^^^^^^^^^^^^
+  File "D:\dev\feedbuffet\services\kitchen\run_kitchen.py", line 26, in <module>
+    from src.db.engine import get_db, engine, Base
+ImportError: cannot import name 'Base' from 'src.db.engine' (D:\dev\feedbuffet\services\kitchen\src\db\engine.py)
