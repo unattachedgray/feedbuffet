@@ -20,12 +20,15 @@ class NewsClient:
         if not self.api_key:
             raise ValueError("NEWSDATA_API_KEY not found in environment or passed to constructor.")
 
-    def fetch_latest_news(self, query="technology", language="en", page=None, max_pages=3):
+    def fetch_latest_news(self, query=None, category=None, language="en", page=None, max_pages=3):
         """
         Fetch news articles from NewsData.io.
         
         Args:
-            query (str): Search query (e.g. category or keyword). Default "technology".
+        Args:
+            query (str): Search query (optional).
+            category (str): Category (optional, e.g. 'technology', 'business').
+            language (str): Language code. Default "en".
             language (str): Language code. Default "en".
             page (str): Next page token.
             max_pages (int): Maximum number of pages to fetch in this chain.
@@ -44,9 +47,12 @@ class NewsClient:
             
             params = {
                 "apikey": self.api_key,
-                "q": query,
                 "language": language,
             }
+            if query:
+                params["q"] = query
+            if category:
+                params["category"] = category
             if current_page:
                 params["page"] = current_page
                 

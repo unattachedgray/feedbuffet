@@ -174,11 +174,84 @@ Output: STRICT JSON:
 ```
 
 # Phase 1 Development Logs
+
+## Initial Implementation (Completed)
 - **Project Init**: Created `apps/web` (Next.js), `services/kitchen` (Python).
-- **News Client**: Implemented `news_client.py` (NewsData.io).
-- **Database**: Models defined in `src/db/models.py`.
-- **Grouping**: Jaccard similarity in `src/ingest/grouping.py`.
-- **AI**: Gemini normalizer in `src/ingest/normalizer.py`.
-- **Pipeline**: `run_kitchen.py` orchestration.
+- **News Client**: Implemented `GoogleNewsClient` (Google News RSS) replacing NewsData.io for better free-tier access.
+- **Database**: Models defined in `src/db/models.py` with Supabase integration.
+- **AI Chef**: Implemented batch processing with `chef.py` using Gemini 3 Flash for semantic grouping and deduplication.
+- **Pipeline**: `run_kitchen.py` orchestration with real-time status reporting.
 - **Fixes**: Resolved import paths, centralized `Base`, and added robust DB URL parsing.
-- **Success**: Connected to Supabase via IPv4 Pooler. Pipeline successfully ingested 10 articles and performed initial grouping.
+- **Success**: Connected to Supabase via IPv4 Pooler. Pipeline successfully ingested and processed news.
+
+## Session 2025-12-28 (Major UX & Performance Enhancements)
+
+### Core Features Implemented
+1. **Multi-Tab Feed Management ("Plates")**
+   - Implemented `PlateManagerWrapper` and `PlateTabs` components
+   - Tabs positioned in navbar with auto-numbering (1, 2, 3...)
+   - Double-click to rename tabs
+   - Click "+" to add new tabs
+   - Delete tabs with confirmation (hover to reveal "x" button)
+   - Persistent state via localStorage
+
+2. **Language & Regional Settings**
+   - Added `SettingsMenu` with language (hl), region (gl), and category selection
+   - Integrated with Google News RSS API for localized content
+   - Added `language` column to `courses` table for future filtering
+   - AI generates titles/summaries in user's selected language
+
+3. **Real-Time Status Updates**
+   - Implemented `KitchenStatus` table for live progress tracking
+   - `RefreshButton` polls `/api/status` and displays granular updates
+   - Status shows: category fetching, batch processing, AI consultation
+   - Added grace period to prevent race conditions on startup
+
+4. **Performance Optimizations**
+   - Increased batch size to 200k characters (minimizes API calls)
+   - Added status callbacks within `cook_batch` for granular updates
+   - Service Role Key for status API to bypass RLS
+   - Fixed refresh button to work on first click
+
+### Bug Fixes
+- Fixed `user_interactions` table null constraint error (explicit UUID generation)
+- Fixed course title links to navigate to actual article URLs
+- Fixed "Top News" category fetching for non-English locales
+- Fixed purge functionality with correct deletion order and RLS bypass
+- Fixed refresh button "undefined" display and race conditions
+- Fixed CourseFeed data structure to match Supabase column names
+
+### Database Migrations
+- `migrate_v3.py`: Added `KitchenStatus` table
+- `migrate_v4.py`: Added `language` column to `courses` table
+
+### API Enhancements
+- `/api/ingest`: Now accepts `categories` array for multi-category fetching
+- `/api/status`: Uses Service Role Key for reliable status reads
+- `/api/track`: Tracks user interactions with encryption
+- `/api/purge`: Robust cache clearing with proper FK constraint handling
+
+## Next Steps
+
+### Immediate Priorities
+1. **Performance Monitoring**: Monitor Gemini API rate limits and optimize batch processing
+2. **Error Handling**: Add retry logic and better error messages for failed ingestion
+3. **Plate-Specific Feeds**: Implement per-plate content filtering and caching
+4. **URL Structure**: Implement shareable feed URLs (e.g., `/feed/[unique-id]`)
+
+### Feature Roadmap
+1. **Sauces (Lenses)**: Implement AI analysis perspectives
+2. **Critic Chat**: Scoped conversational AI for each plate
+3. **User Authentication**: Replace localStorage with proper auth (Google OAuth)
+4. **Personalization**: Use interaction data for content recommendations
+5. **Advanced Plate Management**: Reordering, archiving, sharing settings
+6. **Category Management**: Allow users to define custom categories
+7. **Multi-language Support**: Full i18n for UI (currently content-only)
+
+### Technical Debt
+- Remove duplicate `published_at` and `language` column definitions in `models.py`
+- Implement proper error boundaries in React components
+- Add comprehensive logging for kitchen service
+- Set up automated testing for critical paths
+- Implement proper session management for Critic chat
+

@@ -1,0 +1,423 @@
+{
+  "status": "success",
+  "totalResults": 57795,
+  "results": [
+    {
+      "article_id": "301b3aa3a11aef40bd8bb15f1e12a6bb",
+      "link": "https://www.express.co.uk/news/uk/2150985/fury-west-side-story-reclassified",
+      "title": "Fury as West Side Story reclassified over ‘sexist and transphobic remarks’",
+      "description": "The 1961 classic has been changed from PG to 12 by the British Board of Film Certification due to \"occasional sexist and transphobic remarks\".",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "uk"
+      ],
+      "creator": [
+        "lotti obrien"
+      ],
+      "language": "english",
+      "country": [
+        "united kingdom"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:11:00",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:32:27",
+      "image_url": "https://cdn.images.express.co.uk/img/dynamic/1/590x/2150985_1.jpg",
+      "video_url": null,
+      "source_id": "expresscouk",
+      "source_name": "Express",
+      "source_priority": 1139,
+      "source_url": "https://www.express.co.uk",
+      "source_icon": "https://n.bytvi.com/expresscouk.png",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": false
+    },
+    {
+      "article_id": "424552929f5fbaa9403d715f2136aa77",
+      "link": "https://www.irishexaminer.com/lifestyle-columnists/arid-41765150.html",
+      "title": "Dear Dáithí: Is bad service just the standard these days?",
+      "description": "I'm talking about people who seem to delight in doing a shoddy or lazy job. Whether it's businesses not answering the phone after lunch on a Friday or people who just thrive on using rules or GDPR to tell you why they can't do something really simple",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "dáithí ó sé",
+        "#dear daithi"
+      ],
+      "creator": [
+        "irishexaminer.com"
+      ],
+      "language": "english",
+      "country": [
+        "ireland"
+      ],
+      "category": [
+        "top",
+        "business"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:11:00",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 10:09:17",
+      "image_url": "https://www.irishexaminer.com/cms_media/module_img/9821/4910681_6_org_iStock-2223128253.jpg",
+      "video_url": null,
+      "source_id": "irishexaminer",
+      "source_name": "Irish Examiner",
+      "source_priority": 23120,
+      "source_url": "https://www.irishexaminer.com",
+      "source_icon": "https://n.bytvi.com/irishexaminer.png",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": false
+    },
+    {
+      "article_id": "49ced58213c772b26e565aa1ab002879",
+      "link": "https://www.egyptindependent.com/afghanistans-historic-ariana-cinema-torn-down-to-make-way-for-shopping-center/",
+      "title": "Afghanistan’s historic Ariana Cinema torn down to make way for shopping center",
+      "description": "Kabul, Afghanistan AP — Through the decades, downtown Kabul’s Ariana Cinema had weathered revolution and war, emerging battered and bruised but still standing to entertain Afghans with Bollywood movies and American action flicks. Now, it is no more. On December 16, demolition crews began to tear down the historic cinema, which first opened its doors ...The post Afghanistan’s historic Ariana Cinema torn down to make way for shopping center appeared first on Egypt Independent.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "middle east",
+        "cinema",
+        "taliban",
+        "afghanistan"
+      ],
+      "creator": [
+        "associated press"
+      ],
+      "language": "english",
+      "country": [
+        "egypt"
+      ],
+      "category": [
+        "top",
+        "entertainment"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:55",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:11:40",
+      "image_url": "https://amayei.nyc3.digitaloceanspaces.com/2025/12/gettyimages-2251885612_jpg.jpg",
+      "video_url": null,
+      "source_id": "egypttoday",
+      "source_name": "Egypt Today",
+      "source_priority": 60277,
+      "source_url": "http://www.egypttoday.co.uk",
+      "source_icon": "https://n.bytvi.com/egypttoday.jpg",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "16ae32f4ea7cd35e5d88298e1515d04b",
+      "link": "https://www.rutlandherald.com/sports/pro_national_sports/columbus-plays-new-york-following-marchments-2-goal-game/article_c328b0f3-7e47-52b6-a4f0-4a9f4a3b6936.html",
+      "title": "Columbus plays New York following Marchment's 2-goal game",
+      "description": "The Columbus Blue Jackets host the New York Islanders after Mason Marchment's two-goal game against the Los Angeles Kings in the Blue Jackets' 3-1 win.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "sports",
+        "pronational_sports",
+        "pro_national_sports"
+      ],
+      "creator": [
+        "by the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:38:29",
+      "image_url": "https://bloximages.chicago2.vip.townnews.com/rutlandherald.com/content/tncms/custom/image/21fa4cf2-cde4-11eb-949b-3b99a2a8f984.jpg?resize=600%2C600",
+      "video_url": null,
+      "source_id": "rutlandherald",
+      "source_name": "Rutland Herald",
+      "source_priority": 27612,
+      "source_url": "https://www.rutlandherald.com",
+      "source_icon": "https://n.bytvi.com/rutlandherald.png",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "d3ae350b83eef8a087fb3e85b01b037a",
+      "link": "https://thefacts.com/ap_news/sports/toronto-visits-detroit-after-knies-2-goal-game/article_42c910cc-909a-5a02-8380-8527720421e4.html",
+      "title": "Toronto visits Detroit after Knies' 2-goal game",
+      "description": "Toronto Maple Leafs (17-15-5, in the Atlantic Division) vs. Detroit Red Wings (22-14-3, in the Atlantic Division)",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "sports",
+        "nhl hockey",
+        "maple leafs-red wings-preview"
+      ],
+      "creator": [
+        "by the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 10:42:04",
+      "image_url": "https://bloximages.chicago2.vip.townnews.com/thefacts.com/content/tncms/custom/image/ec547444-62f8-11e5-829b-7f8741774b92.jpg?resize=600%2C315",
+      "video_url": null,
+      "source_id": "thefacts",
+      "source_name": "Scoregolf",
+      "source_priority": 201372,
+      "source_url": "https://thefacts.com",
+      "source_icon": "https://n.bytvi.com/thefacts.jpg",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "a915783d39aa2437fa431b8c2b9a00ed",
+      "link": "https://www.joplinglobe.com/region/national_sports/chicago-plays-pittsburgh-following-bertuzzis-2-goal-game/article_1c9baa13-709a-544b-bec0-31f37eb3d195.html",
+      "title": "Chicago plays Pittsburgh following Bertuzzi's 2-goal game",
+      "description": "The Chicago Blackhawks host the Pittsburgh Penguins after Tyler Bertuzzi's two-goal game against the Dallas Stars in the Blackhawks' 4-3 shootout win.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "national_sports"
+      ],
+      "creator": [
+        "the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:40:50",
+      "image_url": "https://bloximages.chicago2.vip.townnews.com/joplinglobe.com/content/tncms/custom/image/82ebee74-4c80-11ec-942f-cf2743f1e0ea.jpg?resize=200%2C200",
+      "video_url": null,
+      "source_id": "joplinglobe",
+      "source_name": "The Joplin Globe",
+      "source_priority": 42836,
+      "source_url": "https://www.joplinglobe.com",
+      "source_icon": "https://n.bytvi.com/joplinglobe.jpg",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "acae8d384453146ca5eb3f74c1d7bddc",
+      "link": "https://apnews.com/article/columbus-blue-jackets-new-york-islanders-los-angeles-kings-new-york-1d667a09d2a449d7a652d0fb4e4cfe1a",
+      "title": "Columbus plays New York following Marchment's 2-goal game",
+      "description": "The Columbus Blue Jackets host the New York Islanders after Mason Marchment's two-goal game against the Los Angeles Kings in the Blue Jackets' 3-1 win.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "islanders-blue jackets-preview",
+        "sports",
+        "nhl hockey",
+        "new york islanders",
+        "oh state wire",
+        "anders lee",
+        "matthew schaefer",
+        "nhl",
+        "columbus blue jackets",
+        "new york city",
+        "new york",
+        "kirill marchenko",
+        "ohio",
+        "columbus",
+        "los angeles kings"
+      ],
+      "creator": [
+        "the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:31:42",
+      "image_url": "https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F29%2F4e3c1cc7446089a9101a7bdff4c8%2Fdefaultshareimage-copy.png",
+      "video_url": null,
+      "source_id": "apnews",
+      "source_name": "Apnews",
+      "source_priority": 110,
+      "source_url": "https://apnews.com",
+      "source_icon": "https://n.bytvi.com/apnews.png",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "c210a2232dbfc09e8eddd437df311c6d",
+      "link": "https://www.mankatofreepress.com/ap/sports/chicago-plays-pittsburgh-following-bertuzzis-2-goal-game/article_2cbce5fb-ee04-566e-bcde-b017ae9a15d0.html",
+      "title": "Chicago plays Pittsburgh following Bertuzzi's 2-goal game",
+      "description": "The Chicago Blackhawks host the Pittsburgh Penguins after Tyler Bertuzzi's two-goal game against the Dallas Stars in the Blackhawks' 4-3 shootout win.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "sports",
+        "penguins-blackhawks-preview",
+        "nhl hockey"
+      ],
+      "creator": [
+        "by the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:54:53",
+      "image_url": "https://bloximages.chicago2.vip.townnews.com/mankatofreepress.com/content/tncms/custom/image/5e42277e-6153-11e5-b349-8f12bc751eed.jpg?resize=600%2C315",
+      "video_url": null,
+      "source_id": "mankatofreepress",
+      "source_name": "Mankato Free Press",
+      "source_priority": 1227111,
+      "source_url": "https://www.mankatofreepress.com",
+      "source_icon": "https://n.bytvi.com/mankatofreepress.png",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "d39892011bc105a5c1fb44c22c995d28",
+      "link": "https://lufkindailynews.com/anpa/sports/columbus-plays-new-york-following-marchments-2-goal-game/article_ceb2761f-bd14-52ed-bf99-cb933653a5b6.html",
+      "title": "Columbus plays New York following Marchment's 2-goal game",
+      "description": "The Columbus Blue Jackets host the New York Islanders after Mason Marchment's two-goal game against the Los Angeles Kings in the Blue Jackets' 3-1 win.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "sports",
+        "anpa"
+      ],
+      "creator": [
+        "by the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 10:41:00",
+      "image_url": null,
+      "video_url": null,
+      "source_id": "lufkindailynews",
+      "source_name": "Lufkindailynews",
+      "source_priority": 149501,
+      "source_url": "https://lufkindailynews.com",
+      "source_icon": "https://n.bytvi.com/lufkindailynews.jpg",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    },
+    {
+      "article_id": "11474ac2ce7e06a4e902e219e43180a9",
+      "link": "https://www.kvue.com/article/syndication/associatedpress/chicago-plays-pittsburgh-following-bertuzzis-2-goal-game/616-e9d4085b-e158-4185-a5e8-2af82aad77fc",
+      "title": "Chicago plays Pittsburgh following Bertuzzi's 2-goal game",
+      "description": "The Chicago Blackhawks host the Pittsburgh Penguins after Tyler Bertuzzi's two-goal game against the Dallas Stars in the Blackhawks' 4-3 shootout win.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "associatedpress",
+        "syndication"
+      ],
+      "creator": [
+        "the associated press"
+      ],
+      "language": "english",
+      "country": [
+        "united states of america"
+      ],
+      "category": [
+        "sports",
+        "top"
+      ],
+      "datatype": "news",
+      "pubDate": "2025-12-28 09:10:45",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2025-12-28 09:38:27",
+      "image_url": null,
+      "video_url": null,
+      "source_id": "kvue",
+      "source_name": "Kvue",
+      "source_priority": 24029,
+      "source_url": "https://www.kvue.com",
+      "source_icon": "https://n.bytvi.com/kvue.png",
+      "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": true
+    }
+  ],
+  "nextPage": "1766913045747220516"
+}

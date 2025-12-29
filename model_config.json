@@ -1,0 +1,29 @@
+{
+    "models": [
+        {
+            "id": "gemini",
+            "label": "Gemini 3 Flash",
+            "description": "Largest context",
+            "apiModel": "gemini-3-flash-preview",
+            "maxChars": 3600000,
+            "provider": "google"
+        },
+        {
+            "id": "gpt5nano",
+            "label": "GPT-5 Nano",
+            "description": "Cheapest",
+            "apiModel": "gpt-5-nano-2025-08-07",
+            "maxChars": 460000,
+            "provider": "openai"
+        },
+        {
+            "id": "claude",
+            "label": "Claude 3.5 Sonnet",
+            "description": "Balanced",
+            "apiModel": "claude-3-5-sonnet-20241022",
+            "maxChars": 720000,
+            "provider": "anthropic"
+        }
+    ],
+    "defaultModel": "gemini"
+}

@@ -12,12 +12,8 @@ if not GEMINI_API_KEY:
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-MODEL_ID = "gemini-2.0-flash-exp" # Or gemini-1.5-flash which is stable. 2.0 is preview. development.md said gemini-3-flash-preview but that might not exist yet or I should check. I'll stick to a known working one like 1.5-flash or try the one in credentials if valid. Credentials had "gemini-3-flash-preview". I'll use "gemini-1.5-flash" first as fallback or try the requested one.
-
-# Let's try to use the one from credentials if possible, or safe default.
-# The user's credential file had 'model_id': 'gemini-3-flash-preview'.
-# I will use that variable.
-MODEL_ID = "gemini-2.0-flash-exp" # 3-flash might be a typo in user doc or very new. 2.0-flash-exp is current best flash.
+# Strict user requirement: gemini-3-flash-preview
+MODEL_ID = "gemini-3-flash-preview"
 
 def normalize_group_to_course(articles):
     """
@@ -65,3 +61,58 @@ def normalize_group_to_course(articles):
     except Exception as e:
         print(f"Error normalizing course: {e}")
         return None
+
+def normalize_article_groups(groups_of_articles):
+    """
+    Takes a list of groups (each group is a list of articles).
+    Returns a list of Course dicts in the same order.
+    """
+    if not groups_of_articles: return []
+
+    batch_context = ""
+    for g_idx, articles in enumerate(groups_of_articles):
+        batch_context += f"--- GROUP {g_idx} START ---\n"
+        for i, art in enumerate(articles):
+             batch_context += f"[{i+1}] Title: {art.get('title')}\nSource: {art.get('source_name')}\nDate: {art.get('published_at')}\nSummary: {art.get('description')}\nURL: {art.get('url')}\n\n"
+        batch_context += f"--- GROUP {g_idx} END ---\n\n"
+
+    prompt = f"""
+    You are a professional news editor.
+    You will be given multiple separate groups of news articles.
+    For EACH group, analyze the articles and create a single "Course" (consolidated story) representation.
+    
+    Input Data:
+    {batch_context}
+    
+    Output strictly valid JSON as a LIST of objects, where the order matches the input groups:
+    [
+        {{
+            "course_title": "Headline (max 10 words)",
+            "course_summary": "Summary (max 80 words)",
+            "entities": ["entity1", "entity2"],
+            "topics": ["topic1", "topic2"],
+            "representative_published_at": "ISO8601 timestamp",
+            "source_urls": ["url1", "url2"]
+        }},
+        ...
+    ]
+    """
+
+    try:
+        response = client.models.generate_content(
+            model=MODEL_ID,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json"
+            )
+        )
+        data = json.loads(response.text)
+        if isinstance(data, list):
+            return data
+        else:
+            # Fallback if model returns single object instead of list
+            return [data] if data else []
+            
+    except Exception as e:
+        print(f"Error normalizing batch: {e}")
+        return [None] * len(groups_of_articles)

@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, DateTime, Text, Boolean, ForeignKey, JSON
+from sqlalchemy import Column, String, Integer, DateTime, Text, Boolean, ForeignKey, JSON
 from sqlalchemy.dialects.postgresql import UUID, JSONB
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
@@ -15,6 +15,8 @@ class Article(Base):
     description = Column(Text)
     published_at = Column(DateTime(timezone=True))
     language = Column(String)
+    language = Column(String)
+    category = Column(String) # top, business, technology, etc.
     ingested_at = Column(DateTime(timezone=True), server_default=func.now())
     
     # Relationship to CourseArticle
@@ -31,6 +33,9 @@ class Course(Base):
     topics_json = Column(JSONB, default=[])
     source_urls = Column(JSONB, default=[])
     published_at = Column(DateTime(timezone=True))
+    published_at = Column(DateTime(timezone=True))
+    category = Column(String)
+    language = Column(String)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     
     # Relationships
@@ -74,3 +79,23 @@ class PlateCache(Base):
     cache_name = Column(Text)
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
     expires_at = Column(DateTime(timezone=True))
+
+class UserInteraction(Base):
+    __tablename__ = 'user_interactions'
+    
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id = Column(UUID(as_uuid=True), nullable=True) # Anonymous or Auth
+    course_id = Column(UUID(as_uuid=True), ForeignKey('courses.id'))
+    interaction_type = Column(String) # 'vote', 'click_source', 'ask_analyst', 'toggle_category', 'change_settings'
+    details_encrypted = Column(Text) # AES-256 encrypted JSON
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+class KitchenStatus(Base):
+    __tablename__ = 'kitchen_status'
+    
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    # Using a singleton ID 0000... or just limit 1 query
+    status_text = Column(String)
+    progress_percent = Column(Integer)
+    is_active = Column(Boolean, default=False)
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
